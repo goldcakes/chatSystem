@@ -16,9 +16,5 @@ let server = http.listen(3000, function () {
   console.log("Server listening on: " + host + " port: " + port)
 })
 
-// app.post('/api auth', (req, res) => {
-//   var username = req.body.username;
-//   var email = req.body
-// });
 app.post('/api/auth', require('./router/postLogin'))
 app.post('/loginafter', require('./router/postLoginAfter'));

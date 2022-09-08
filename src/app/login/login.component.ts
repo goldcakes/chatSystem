@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('userid', res.userid.toString());
         sessionStorage.setItem('userlogin', res.valid.toString());
         sessionStorage.setItem('username', res.username);
-        sessionStorage.setItem('userbirthdate', res.email);
-        sessionStorage.setItem('userage', res.role);
+        sessionStorage.setItem('email', res.email);
+        sessionStorage.setItem('role', res.role);
 
         this.router.navigateByUrl('/chat')
       } else {
