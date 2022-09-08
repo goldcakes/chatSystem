@@ -38,4 +38,12 @@ There are three data structures for this project. There are Users, Groups and Ch
 
 #### Login
 
+The login component is for the page where a user enters their username to login to their account. On submit it makes a http post request to api/auth with the username as a parameter. If it returns valid as true, it will store that username's account details into session storage.
+
 #### Chat
+
+The chat component is for the page where people can access the chat groups and channels.
+
+#### UserManagement
+
+The user management component is for adding and deleting user accounts for the admin level accounts.
