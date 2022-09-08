@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-// var cors = require('cors');
-// app.use(cors());
+var cors = require('cors');
+app.use(cors());
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
@@ -15,3 +15,10 @@ let server = http.listen(3000, function () {
   let port = server.address().port
   console.log("Server listening on: " + host + " port: " + port)
 })
+
+// app.post('/api auth', (req, res) => {
+//   var username = req.body.username;
+//   var email = req.body
+// });
+app.post('/api/auth', require('./router/postLogin'))
+app.post('/loginafter', require('./router/postLoginAfter'));

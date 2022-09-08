@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('userbirthdate', res.email);
         sessionStorage.setItem('userage', res.role);
 
-        this.router.navigateByUrl('/account')
+        this.router.navigateByUrl('/chat')
       } else {
         alert("Incorrect login")
       }

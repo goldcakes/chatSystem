@@ -9,9 +9,9 @@ The git repository contains the Chat System project. The Angular project was gen
 ## Data Structures
 
 There are three data structures for this project. There are Users, Groups and Channels. These structures are stored in the server of the project udner chatSystem\server\data as JSON files.  
-Users are an array of users. Each user has a username, email, id, and role.  
-Groups are an array of groups. Each group has a group name and id.  
-Channels are an array of channels. Each channel has a channel name and id.
+**Users** are an array of users. Each user has a username, email, id, and role.  
+**Groups** are an array of groups. Each group has a group name and id.  
+**Channels** are an array of channels. Each channel has a channel name and id.
 
 ## REST API
 
