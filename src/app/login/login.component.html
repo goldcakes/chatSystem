@@ -1,1 +1,11 @@
-<p>login works!</p>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <p>Enter your username</p>
+    <!-- Login Form -->
+    <form>
+      <input type="text" name="username" id="username" [(ngModel)]="username" placeholder="username" class="fadeIn second">
+      <button (click)="submit()" class="fadeIn third">Submit</button>
+    </form>
+  </div>
+</div>
