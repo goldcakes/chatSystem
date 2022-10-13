@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ChatComponent } from './chat/chat.component';
 import { UserManagementComponent } from './user-management/user-management.component';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ChatComponent,
-    UserManagementComponent
+    UserManagementComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,
