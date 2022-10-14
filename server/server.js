@@ -32,7 +32,6 @@ app.use(express.json()) // Mount json middleware
 app.use(express.static(__dirname + '../dist/chatSystem'));
 console.log(__dirname);
 
-
 // let server = http.listen(PORT, function () {
 //   let host = server.address().address
 //   let port = server.address().port
@@ -43,17 +42,19 @@ console.log(__dirname);
 app.post('/api/auth', require('./router/postLogin'));
 app.post('/loginafter', require('./router/postLoginAfter'));
 
-// s
+// user routes
 // app.post('/addUser', require('./router/users/adduser'));
 // app.post('/user/:userId', require('./router/users/removeuser'));
 // app.post('/api/auth', require('./router/users/getusers'));
 
+// group routes
 // app.post('/loginafter', require('./router/groups/addgroup'));
 // app.post('/loginafter', require('./router/groups/removegroup'));
 // app.post('/loginafter', require('./router/groups/addgroupmember'));
 // app.post('/loginafter', require('./router/groups/removegroupmember'));
 // app.post('/loginafter', require('./router/groups/getgroups'));
 
+// channel routes
 // app.post('/api/auth', require('./router/channels/addchannel'));
 // app.post('/api/auth', require('./router/channels/removechannel'));
 // app.post('/api/auth', require('./router/channels/addchannelmember'));
